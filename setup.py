@@ -38,7 +38,7 @@ download_url = 'https://github.com/drgarcia1986/simple-settings/tarball/master'
 
 setup(
     name='simple-settings',
-    version='0.13.0',
+    version='0.14.0-super-carers',
     install_requires=[],
     url='https://github.com/drgarcia1986/simple-settings',
     author='Diego Garcia',
