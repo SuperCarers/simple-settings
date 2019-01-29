@@ -350,12 +350,12 @@ required settings not satified in the settings file.
 Required Not None Settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also determine a list mandatory settings that must have a not none
-value, i.e. settings that cannot be set as none. For this, set the *special
-setting* ``REQUIRED_NOT_NONE_SETTINGS`` to a list (or any iterable) of the
-settings that you require to not be none. If any setting in this list has a
-value of none, then a ``ValueError`` is raised with a list of settings that
-must be set to not none.
+You can also determine a list of settings that must have a not none value, i.e.
+settings that cannot be set as none. For this, set the *special setting*
+``REQUIRED_NOT_NONE_SETTINGS`` to a list (or any iterable) of the settings that
+you require to not be none. If any setting in this list has a value of none,
+then a ``ValueError`` is raised with a list of settings that must be set to not
+none.
 
 Required Settings Types
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -375,7 +375,7 @@ The supported types are listed below. If you attempt to set a type that is not
 one of these types, then a ``ValueError`` will be raised with any unsupported
 types.
 
-    - ``"bool"`` - python's native boolean type, parsed from a string as true if the value is ``"True"`` or ``true``; and as false if the value if ``"False"`` or ``"false"``
+    - ``"bool"`` - python's native boolean type, parsed from a string as true if the value is ``"True"`` or ``"true"``; and as false if the value if ``"False"`` or ``"false"``
     - ``"int"`` - python's native integer type, parsed from a string using ``int(value)``
     - ``"float"`` - python's native float type, parsed from a string using ``float(value)``
     - ``"str"`` - python's native string type, not parsed from a string
@@ -549,6 +549,12 @@ Decorator example
 
 Changelog
 ---------
+
+[NEXT_RELEASE] - 2019-01-29
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Required not none special setting
+- Required types special setting and type conversion
 
 [0.13.0] - 2018-03-28
 ~~~~~~~~~~~~~~~~~~~~~
